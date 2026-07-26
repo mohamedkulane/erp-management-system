@@ -1,0 +1,18 @@
+{
+  "name": "@erp/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ERP frontend workspace package placeholder for FOUNDATION-001",
+  "scripts": {
+    "dev": "node -e \"console.log('Frontend scaffold pending FOUNDATION-003')\"",
+    "build": "node -e \"console.log('Frontend scaffold pending FOUNDATION-003')\"",
+    "lint": "node -e \"console.log('Frontend lint pending FOUNDATION-003')\"",
+    "typecheck": "node -e \"console.log('Frontend typecheck pending FOUNDATION-003')\"",
+    "test": "node -e \"console.log('Frontend tests pending FOUNDATION-003')\"",
+    "test:e2e": "node -e \"console.log('Frontend E2E pending FOUNDATION-003')\""
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@erp/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ERP backend workspace package placeholder for FOUNDATION-001",
+  "scripts": {
+    "dev": "node -e \"console.log('Backend scaffold pending FOUNDATION-002')\"",
+    "build": "node -e \"console.log('Backend scaffold pending FOUNDATION-002')\"",
+    "lint": "node -e \"console.log('Backend lint pending FOUNDATION-002')\"",
+    "typecheck": "node -e \"console.log('Backend typecheck pending FOUNDATION-002')\"",
+    "test": "node -e \"console.log('Backend tests pending FOUNDATION-002')\"",
+    "test:integration": "node -e \"console.log('Backend integration tests pending FOUNDATION-002')\"",
+    "test:e2e": "node -e \"console.log('Backend E2E pending FOUNDATION-002')\"",
+    "db:migrate": "node -e \"console.log('Database migration pending later foundation story')\"",
+    "db:seed": "node -e \"console.log('Database seed pending later foundation story')\""
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
