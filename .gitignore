@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.staging
+.env.production
+
+# Keep example environment
+!.env.example
+
+# Builds
+dist/
+build/
+coverage/
+.vite/
+.next/
+
+# Logs
+*.log
+logs/
+
+# Testing
+playwright-report/
+test-results/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Local storage
+uploads/
+tmp/
+temp/
+
+# Database
+*.sqlite
+*.db
+
+# Generated exports
+output/
+exports/
+reports/
