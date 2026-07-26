@@ -6,44 +6,57 @@ Phase 0 — Repository and Engineering Foundation
 
 ## Active Epic
 
-Epic 0.1 — Monorepo Setup
+Epic 0.2 — Backend Foundation
 
 ## Active Story
 
-FOUNDATION-001 — Initialize the ERP monorepo
+FOUNDATION-002 — Scaffold NestJS Backend
 
 ## Goal
 
-Create the repository structure and workspace configuration required
-for the frontend, backend, documentation and infrastructure.
+Create the NestJS backend foundation without implementing ERP business modules.
 
 ## In Scope
 
-- Root workspace configuration
-- client folder
-- server folder
-- packages folder
-- docs folder
-- infrastructure folder
-- shared root scripts
-- TypeScript configuration foundation
-- Git ignore file
-- environment example
-- root README
+- NestJS application
+- Strict TypeScript configuration
+- API versioning under `/api/v1`
+- Environment configuration validation
+- Global request validation
+- Global error handling
+- Correlation ID middleware
+- Structured logging foundation
+- Health-check endpoints
+- Unit-test foundation
+- Integration-test foundation
 
 ## Out of Scope
 
+- Prisma business schema
+- PostgreSQL business tables
 - Authentication
-- Database business tables
-- Tenant implementation
+- Multi-tenancy implementation
+- Roles and permissions
 - Sales
+- Procurement
 - Inventory
 - Finance
-- Production deployment
+- Redis
+- BullMQ
+- Docker infrastructure
+- Frontend implementation
 
 ## Completion Conditions
 
-- `pnpm install` succeeds.
-- Root workspace recognizes frontend and backend.
-- Root commands are documented.
-- No business module is implemented.
+- Backend development server starts successfully.
+- `GET /api/v1/health/live` returns success.
+- `GET /api/v1/health/ready` returns success.
+- Environment variables are validated at startup.
+- Validation errors use a consistent response format.
+- Unexpected errors use a global exception handler.
+- Every request receives a correlation ID.
+- Lint passes.
+- Type checking passes.
+- Unit tests pass.
+- Integration tests pass.
+- No ERP business module is implemented.
