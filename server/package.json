@@ -3,19 +3,50 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "ERP backend workspace package placeholder for FOUNDATION-001",
+  "description": "NestJS backend for the ERP platform",
   "scripts": {
-    "dev": "node -e \"console.log('Backend scaffold pending FOUNDATION-002')\"",
-    "build": "node -e \"console.log('Backend scaffold pending FOUNDATION-002')\"",
-    "lint": "node -e \"console.log('Backend lint pending FOUNDATION-002')\"",
-    "typecheck": "node -e \"console.log('Backend typecheck pending FOUNDATION-002')\"",
-    "test": "node -e \"console.log('Backend tests pending FOUNDATION-002')\"",
-    "test:integration": "node -e \"console.log('Backend integration tests pending FOUNDATION-002')\"",
-    "test:e2e": "node -e \"console.log('Backend E2E pending FOUNDATION-002')\"",
+    "dev": "nest start --watch",
+    "start": "node dist/main.js",
+    "build": "nest build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run --config vitest.config.ts",
+    "test:watch": "vitest --config vitest.config.ts",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:e2e": "pnpm test:integration",
     "db:migrate": "node -e \"console.log('Database migration pending later foundation story')\"",
     "db:seed": "node -e \"console.log('Database seed pending later foundation story')\""
   },
   "engines": {
     "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.28",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.1.28",
+    "@nestjs/platform-express": "^11.1.28",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "joi": "^18.2.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@nestjs/cli": "^11.0.24",
+    "@nestjs/testing": "^11.1.28",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "@types/supertest": "^7.2.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.6",
+    "supertest": "^7.2.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0",
+    "vitest": "^4.1.10"
   }
 }
